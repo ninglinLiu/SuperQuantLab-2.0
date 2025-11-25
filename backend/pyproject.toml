@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "superquantlab-backend"
+version = "2.0.0"
+description = "SuperQuantLab 2.0 Backend - Crypto Quant Trading Engine"
+authors = ["SuperQuantLab Team"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0"}
+pydantic = "^2.5.0"
+pydantic-settings = "^2.1.0"
+numpy = "^1.26.0"
+pandas = "^2.1.0"
+python-dotenv = "^1.0.0"
+httpx = "^0.25.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-asyncio = "^0.21.1"
+black = "^23.11.0"
+ruff = "^0.1.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+

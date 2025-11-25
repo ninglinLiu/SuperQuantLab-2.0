@@ -1,0 +1,7 @@
+# Place your CSV data files here
+# Format: {SYMBOL}_{TIMEFRAME}.csv
+# Example: BTCUSDT_1h.csv
+# 
+# Required columns:
+# timestamp,open,high,low,close,volume
+
